@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Training</title>
+
+
+
+	<style type="text/css">
+
+
+		#sarah{
+			background-color: orange;
+			width: 100px;
+			height: 100px;
+			border-radius: 100%;
+		}
+		#man{
+			background-color: transparent;
+			width: 100px;
+			height: 100px;
+			border-radius: 100%;
+		}
+
+		.orange{
+			background-color: orange;
+		}
+	</style>
+
+
+
+</head>
+<body>
+
+<center>
+
+<div id="sarah" class="orange"></div><br>
+
+<input type="button" id="on" value="On">
+<!-- <input type="button" id="off" onclick="off()" value="Off"> -->
+
+</center>
+
+<script type="text/javascript">
+
+		 var x = document.getElementById("sarah");
+		 var y = document.getElementById("on");
+		 var col = x.style.background = "none";
+	// function on() {
+	 	// body...
+	 	// document.getElementById('sarah').style="background-color:yellow";
+	 	// document.getElementById('man').style="background-color:orange";
+	 	// document.getElementById('on').value='Off';
+	 	// document.getElementById('on').id='off';
+	 	// document.getElementById('on').props.onclick='off()';
+	 	// var x = document.getElementById("sarah");
+		 //  if (x.innerHTML === "Hello") {
+		 //    x.innerHTML = "Swapped text!";
+		 //  } else {
+		 //    x.innerHTML = "Hello";
+		 //  }
+		    
+	//  } 
+
+	// function off() {
+	 	// body...
+	 	// document.getElementById('sarah').style="background-color:lightgrey";
+	 	// document.getElementById('man').style="background-color:grey";
+	 	// document.getElementById('off').value='On';
+	 	// document.getElementById('on').props.onclick='on()';
+	 // } 
+	 y.addEventListener('click', function(){
+		if (col){
+			x.style.background = "yellow";
+			y.value = "Off";
+		}
+		else {
+			
+			x.style.background = "lightgrey";
+			y.value = "On";
+		}
+		col = !col;
+
+	 })
+		// y.addEventListener("click", function(){
+		// 	document.body.id.toggle("orange");
+		// })
+</script>
+
+
+</body>
+</html>
